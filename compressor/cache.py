@@ -7,7 +7,7 @@ from django.core.files.base import ContentFile
 from django.utils import simplejson
 from django.utils.encoding import smart_str
 from django.utils.functional import SimpleLazyObject
-from django.utils.hashcompat import md5_constructor
+from hashlib import md5 as md5_constructor
 from django.utils.importlib import import_module
 
 from compressor.conf import settings
